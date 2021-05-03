@@ -29,8 +29,9 @@ express api server with basic and bearer authentication and AccessControlList us
 
 ## <center> UML DIAGRAM </center>
 
-![web request response cycle diagram 001](./src/assets/1599bearerAuthServer001.PNG)
-![web request response cycle diagram 002](./src/assets/1598bearerAuthServer001.PNG)
+![web request response cycle diagram 001](./src/assets/1693signup-UMI.PNG)
+![web request response cycle diagram 002](./src/assets/1692signin-UMI.PNG)
+![web request response cycle diagram 003](./src/assets/1691users-UMI.PNG)
 
 ## Overview
 
@@ -67,7 +68,7 @@ tests performed with jest and supertest
 
 ## Change Log
 
-04-27-2021 10:59pm - Application now has a fully-functional express server, with POST route ('/signup') and ('/signin') endpoints, mongodb working locally on my own machine.
+04-28-2021 10:59pm - Application now has a fully-functional express server, with POST route ('/signup') and ('/signin') endpoints, mongodb working locally on my own machine. Also have AccessControlList implemented by meregin the two starter codes and changing the v2 routes (exact copy of v1 routes) to add middleware function call with (capabilities) as argument - thereby checking the token encrypted sign-in authorization status (user, editor or admin) against the virtual db field of .capabilities of that specific user that just signed back in.
 
 ## Credits and Collaborations
 

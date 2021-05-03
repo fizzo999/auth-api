@@ -30,8 +30,8 @@ app.use('/api/v2', v2Routes);
 
 
 app.get('/test', (req, res) => {
-  console.log('We are trying really hard to hit this test route');
-  res.status(200).send('Hello, this test route is working');
+  console.log('We are hitting this /test route');
+  res.status(200).send('Hello, this /test route is working');
 });
 
 
